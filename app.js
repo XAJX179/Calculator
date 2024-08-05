@@ -17,19 +17,14 @@ let operator;
 function operate(operator, firstNumber, secondNumber) {
   switch (operator) {
     case "+":
-      add(firstNumber, secondNumber);
-      break;
+      return add(firstNumber, secondNumber);
     case "-":
-      sub(firstNumber, secondNumber);
-      break;
+      return sub(firstNumber, secondNumber);
     case "*":
-      mul(firstNumber, secondNumber);
-      break;
+      return mul(firstNumber, secondNumber);
     case "/":
-      div(firstNumber, secondNumber);
-      break;
+      return div(firstNumber, secondNumber);
     default:
-      alert("Error in Operation");
-      break;
+      return alert("Error in Operation");
   }
 }
