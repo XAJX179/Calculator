@@ -14,12 +14,7 @@ body {
 .display {
   overflow: hidden;
 }
-.display p {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 0;
-  word-break: break-all;
-}
+
 /* adjust */
 body {
   margin-top: 50px;
@@ -30,6 +25,12 @@ body {
 }
 .display {
   height: 20%;
+}
+.display p {
+  height: 100%;
+  margin: 0;
+  overflow-wrap: break-word;
+  text-align: right;
 }
 .button-container {
   height: 80%;
