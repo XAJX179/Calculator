@@ -3,9 +3,7 @@ let secondNumber;
 let operator;
 let displayValue = "";
 let display = document.querySelector(".display p");
-const btnList = Array.from(
-  document.querySelectorAll(".button-container button")
-);
+const btnContainer = document.querySelector(".button-container");
 
 function add(a, b) {
   return a + b;
@@ -55,15 +53,13 @@ function populateDisplay(data) {
   }
 }
 
-btnList.forEach((button) => {
-  button.addEventListener("click", () => {
-    if (button.innerText !== "C") {
-      let value = button.innerText;
-      populateDisplay(value);
-      console.log(value);
-    } else {
-      displayValue = "0";
-      updateDisplay(displayValue);
-    }
-  });
+btnContainer.addEventListener("click", (button) => {
+  if (button.target.innerText !== "C") {
+    let value = button.target.innerText;
+    populateDisplay(value);
+    console.log(value);
+  } else {
+    displayValue = "0";
+    updateDisplay(displayValue);
+  }
 });
