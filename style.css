@@ -42,20 +42,19 @@ button {
 }
 /* misc */
 body {
-  background-color: rgb(36, 47, 47);
+  background-color: rgb(38, 47, 47);
 }
 .calculator {
-  border: 10px solid red;
+  border: 10px solid rgb(33, 41, 35);
   background-color: rgb(29, 29, 26);
+  border-radius: 10px;
+  padding: 10px;
 }
 .display {
-  border: 1px red solid;
+  border: 1px rgb(112, 54, 54) solid;
   color: azure;
   font-family: "Courier New", Courier, monospace;
   font-size: 40pt;
-}
-.button-container {
-  border: 1px blue solid;
 }
 button {
   font-weight: bold;
